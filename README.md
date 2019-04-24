@@ -163,24 +163,24 @@ The packages you must install are:
       [4607b0f0] + SuiteSparse
     ```
 
-    And should only take a few seconds.
+    This should only take a few seconds.
 
 - **b)** the **XXX** package
 
     In order to plot things, i.e., to look at the output of the beautiful work you will be doing in this demo, you will need a plotting package.
-    Again, just install it via
+    Just like before, make sure you are in `pkg` mode and by type `add XXX` (and press return), and you should see something like:
 
     ```julia
     (v1.1) pkg> add XXXX
     ```
 
-    Again, this should only take a few seconds.
+    And again, this should only take a few seconds.
 
 - **c)** the **IJulia** package
 
-    The [IJulia](https://github.com/JuliaLang/IJulia.jl) package will be your tool to launch JupyterLab from Julia.
+    Finally, the [IJulia](https://github.com/JuliaLang/IJulia.jl) package will be your tool to launch JupyterLab from Julia.
 
-    Still in `pkg` mode, type `add IJulia` (and press return), and you should see something like:
+    Same as above, in `pkg` mode, type `add IJulia` (and press return), and you should see something like:
 
     ```julia
     (v1.1) pkg> add IJulia
