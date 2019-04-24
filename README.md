@@ -11,17 +11,17 @@ If not, you must first go through these steps:
 
 1. **Install Julia**
 
-    First things first, you must install [Julia](https://julialang.org). Click on the link, look for the "download" buttons, and install the correct version for your OS.
+    First things first, you must install [Julia](https://julialang.org). Click on the [Julia](https://julialang.org) link, look for the "download" buttons, and install the correct version for your OS.
     Once this is done, you should be able to start Julia by typing
-    
+
     ```bash
     julia
     ```
-    
-    in command prompt.
+
+    in the terminal.
     If not, find the Julia executable, and simply double click on it!
     This should open a terminal session, and display something like this:
-    
+
     ```julia
                    _
        _       _ _(_)_     |  Documentation: https://docs.julialang.org
@@ -31,15 +31,14 @@ If not, you must first go through these steps:
       | | |_| | | | (_| |  |  Version 1.1.0 (2019-01-21)
      _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org/ release
     |__/                   |
-    
+
     julia>
     ```
 
-    This is called the Julia REPL (for Read Eval Loop Print).
-    Interactive use of Julia is done within the REPL.
-    Anyway, this great, Julia is now running on your computer!
+    This is called the Julia REPL (for Read Eval Loop Print) and is used for interactive use of Julia.
+    Anyway, this great, Julia is now running on your computer! Congratulations!
 
-    If you want to learn more about Julia, you can read [the documentation](https://docs.julialang.org/en/v1/), and there is a helpful [Slack channel](https://julialang.slack.com/messages) to ask questions if you are stuck.
+    If you want to learn more about Julia, you can read [the documentation](https://docs.julialang.org/en/v1/), there is a [Discourse forum](https://discourse.julialang.org/), and there is a [Slack channel](https://julialang.slack.com/messages) if you need help.
     But for now you should not need any of those: The notebook will just require you to press Shift + Enter a couple of times.
 
 2. **Add some Julia packages**
@@ -51,46 +50,48 @@ If not, you must first go through these steps:
     (v1.1) pkg>
     ```
 
-    This means you're in the package-manager (or `pkg`) mode. 
+    This means you're in the package-manager (or `pkg`) mode.
 
     Note that you can exit the `pkg` mode by pressing the `delete` key, and this will revert the Julia prompt to its original form:
 
     ```julia
     julia>
     ```
-    
+
     - the **TransportMatrixTools** package
-        To create global steady-state biogeochemistry models, we will be using the TransportMatrixTools package.
-        (The package's name is still up in the air.)
+
+        To create a global steady-state biogeochemistry model, we will be using the TransportMatrixTools package.
+        (The package's name is still up in the air, as you will see in the notebook, but for now this is the name that Julia knows.)
+
         Activate the package manager with `]`, and "add" the package by typing
 
         ```julia
         add https://github.com/briochemc/TransportMatrixTools.jl.git
         ```
-        
+
         It should look like this:
-    
+
         ```julia
         (v1.1) pkg> add https://github.com/briochemc/TransportMatrixTools.jl.git
         ```
-        
+
         And should only take a few seconds.
-    
+
     - the **XXX** package
-    
+
         In order to plot things, i.e., to look at the output of the beautiful work you will be doing in this demo, you will need a plotting package.
         Again, just install it via
-        
+
         ```julia
         (v1.1) pkg> add XXXX
         ```
 
         Again, this should only take a few seconds.
 
-    - the **IJulia** 
+    - the **IJulia**
 
-        The [IJulia](https://github.com/JuliaLang/IJulia.jl) package will be our tool to launch JupyterLab, which allows to edit and run Jupyter notebooks.
-        
+        The [IJulia](https://github.com/JuliaLang/IJulia.jl) package will be your tool to launch JupyterLab from Julia.
+
         Still in `pkg` mode, type `add IJulia` (and press return), and you should see something like:
 
         ```julia
@@ -116,23 +117,25 @@ If not, you must first go through these steps:
 
 3. **Start JupyterLab**
 
-    The final steo is just to start the JupyterLab.
+    The final step is to start JupyterLab.
     First, make sure you are in the normal Julia REPL mode (i.e., press `delete` if you are in `pkg` mode.)
-    
-     tell Julia that you want to "use" IJulia and then you can install and start JupyterLab by simply typing `jupyerlab()` in Julia. It should look like:
+    Then, tell Julia that you want to "use" IJulia:
 
     ```julia
     julia> using IJulia
-    
-    julia> jupyterlab()
     ```
 
     Note you can just copy paste the code above (including the `julia>` bits), and the REPL will know to not paste those automatically.
-    
     Everytime a package is used for the first time, Julia will precompile it (which can take a few seconds to minutes, depending on the package — don't worry, just let it finish).
-   
+
+    and finally tall Julia to install and start JupyterLab by simply typing `jupyerlab()` in Julia. It should look like:
+
+    ```julia
+    julia> jupyterlab()
+    ```
+
     If Julia asks you if you want Conda to install JupyterLab, just say "yes" (i.e., type `y`).
     After a couple seconds/minutes of downloads and installations, you should be all set up and a browser window should open with JupyterLab!
-    
-    Just navigate to the notebook within JupyterLab and double-click it, and now you should be able to just follow the notebook from hereon!
+
+    Just navigate to the notebook within the JupyterLab of your browser and double-click on the notebook!
 
