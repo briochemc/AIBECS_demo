@@ -168,7 +168,7 @@ The packages you must install are:
 - **b)** the **XXX** package
 
     In order to plot things, i.e., to look at the output of the beautiful work you will be doing in this demo, you will need a plotting package.
-    Just like before, make sure you are in `pkg` mode and by type `add XXX` (and press return), and you should see something like:
+    Just like before, make sure you are in `pkg` mode and type `add XXX` (and press return), and you should see something like:
 
     ```julia
     (v1.1) pkg> add XXXX
@@ -201,6 +201,17 @@ The packages you must install are:
     ```
 
     This should only take a few seconds as well.
+
+- **d)** Troubleshooting:
+
+    If you get an error while running the notebook, it might be because you need to do one of the following:
+    - If you get an `ERROR: LoadError: CodecZlib.jl` then close all Julia sessions, open a new one, go into `pkg` mode (type `]` in the REPL), and type `build CodecZlib`.
+        It should look like this:
+        ```julia
+        (v1.1) pkg> build CodecZlib
+          Building CodecZlib → `~/.julia/packages/CodecZlib/9jDi1/deps/build.log`
+        ```
+        Then close Julia, restart it again, and proceed to the step 3.
 
 
 ## 3. Start JupyterLab
