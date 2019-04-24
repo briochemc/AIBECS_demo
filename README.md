@@ -71,8 +71,8 @@ The packages you must install are:
     add https://github.com/briochemc/WorldOceanAtlasTools.jl.git
     ```
 
-    It should look like this:   
-    
+    It should look like this:
+
     ```julia
     (v1.1) pkg> add https://github.com/briochemc/WorldOceanAtlasTools.jl.git
       Updating git-repo `https://github.com/briochemc/WorldOceanAtlasTools.jl.git`
@@ -97,10 +97,10 @@ The packages you must install are:
       [30578b45] + URIParser v0.4.0
       [1986cc42] + Unitful v0.15.0
       [04f20302] + WorldOceanAtlasTools v0.2.0 #master (https://github.com/briochemc/WorldOceanAtlasTools.jl.git)
-    ``` 
+    ```
 
     Then you can add the parent package by typing
-    
+
     ```julia
     add https://github.com/briochemc/TransportMatrixTools.jl.git
     ```
@@ -165,13 +165,41 @@ The packages you must install are:
 
     This should only take a few seconds.
 
-- **b)** the **XXX** package
+- **b)** the **Plots** package
 
     In order to plot things, i.e., to look at the output of the beautiful work you will be doing in this demo, you will need a plotting package.
-    Just like before, make sure you are in `pkg` mode and type `add XXX` (and press return), and you should see something like:
+    Just like before, make sure you are in `pkg` mode and type `add Plots` (and press return), and you should see something like:
 
     ```julia
-    (v1.1) pkg> add XXXX
+    (v1.1) pkg> add Plots
+      Updating registry at `~/.julia/registries/General`
+      Updating git-repo `https://github.com/JuliaRegistries/General.git`
+     Resolving package versions...
+     Installed Showoff ─────────── v0.2.1
+     Installed PlotThemes ──────── v0.3.0
+     Installed Measures ────────── v0.3.0
+     Installed ColorTypes ──────── v0.7.5
+     Installed Plots ───────────── v0.24.0
+     Installed PlotUtils ───────── v0.5.8
+     Installed Contour ─────────── v0.5.1
+     Installed FixedPointNumbers ─ v0.5.3
+     Installed Colors ──────────── v0.9.5
+     Installed GR ──────────────── v0.39.1
+      Updating `~/.julia/environments/v1.1/Project.toml`
+      [91a5bcdd] + Plots v0.24.0
+      Updating `~/.julia/environments/v1.1/Manifest.toml`
+      [3da002f7] + ColorTypes v0.7.5
+      [5ae59095] + Colors v0.9.5
+      [d38c429a] + Contour v0.5.1
+      [53c48c17] + FixedPointNumbers v0.5.3
+      [28b8d3ca] + GR v0.39.1
+      [442fdcdd] + Measures v0.3.0
+      [ccf2f8ad] + PlotThemes v0.3.0
+      [995b91a9] + PlotUtils v0.5.8
+      [91a5bcdd] + Plots v0.24.0
+      [992d4aef] + Showoff v0.2.1
+      Building GR ───→ `~/.julia/packages/GR/KGODl/deps/build.log`
+      Building Plots → `~/.julia/packages/Plots/47Tik/deps/build.log`
     ```
 
     And again, this should only take a few seconds.
@@ -202,17 +230,19 @@ The packages you must install are:
 
     This should only take a few seconds as well.
 
-- **d)** Troubleshooting:
+- **d)** Building extra packages:
 
-    If you get an error while running the notebook, it might be because you need to do one of the following:
-    - If you get an `ERROR: LoadError: CodecZlib.jl` then close all Julia sessions, open a new one, go into `pkg` mode (type `]` in the REPL), and type `build CodecZlib`.
+    Some of Julia's packages must be built for the notebook to work.
+    Don't worry, this is pretty easy too.
+    Get in `pkg` mode (type `]` in the REPL), and then
+    - type `build CodecZlib`.
         It should look like this:
         ```julia
         (v1.1) pkg> build CodecZlib
           Building CodecZlib → `~/.julia/packages/CodecZlib/9jDi1/deps/build.log`
         ```
-        Then close Julia, restart it again, and proceed to the step 3.
 
+Great! You can now proceed to starting the notebook!
 
 ## 3. Start JupyterLab
 
