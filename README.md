@@ -88,7 +88,7 @@ The packages you must install are:
 
     Again, this should only take a few seconds.
 
-- **c)** the **IJulia**
+- **c)** the **IJulia** package
 
     The [IJulia](https://github.com/JuliaLang/IJulia.jl) package will be your tool to launch JupyterLab from Julia.
 
