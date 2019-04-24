@@ -58,7 +58,7 @@ julia>
 
 The packages you must install are:
 
-- **a.** The **TransportMatrixTools** package
+- **a)** The **TransportMatrixTools** package
 
     To create a global steady-state biogeochemistry model, we will be using the TransportMatrixTools package.
     (The package's name is still up in the air, as you will see in the notebook, but for now this is the name that Julia knows.)
@@ -77,7 +77,7 @@ The packages you must install are:
 
     And should only take a few seconds.
 
-- **b.** the **XXX** package
+- **b)** the **XXX** package
 
     In order to plot things, i.e., to look at the output of the beautiful work you will be doing in this demo, you will need a plotting package.
     Again, just install it via
@@ -88,7 +88,7 @@ The packages you must install are:
 
     Again, this should only take a few seconds.
 
-- **c.** the **IJulia**
+- **c)** the **IJulia**
 
     The [IJulia](https://github.com/JuliaLang/IJulia.jl) package will be your tool to launch JupyterLab from Julia.
 
