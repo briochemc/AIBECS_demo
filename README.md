@@ -78,24 +78,7 @@ The packages you must install are:
      Resolving package versions...
       Updating `~/.julia/environments/v1.1/Project.toml`
       [04f20302] + WorldOceanAtlasTools v0.2.0 #master (https://github.com/briochemc/WorldOceanAtlasTools.jl.git)
-      Updating `~/.julia/environments/v1.1/Manifest.toml`
-      [9e28174c] + BinDeps v0.8.10
-      [a9693cdc] + CondaBinDeps v0.1.0
-      [124859b0] + DataDeps v0.6.2
-      [864edb3b] + DataStructures v0.15.0
-      [59287772] + Formatting v0.3.5
-      [cd3eb016] + HTTP v0.8.0
-      [83e8ac13] + IniFile v0.5.0
-      [7eb4fadd] + Match v1.0.2
-      [c03570c3] + Memoize v0.3.0
-      [e1d29d7a] + Missings v0.4.0
-      [30363a11] + NetCDF v0.7.3
-      [189a3867] + Reexport v0.2.0
-      [a2af1166] + SortingAlgorithms v0.3.1
-      [2913bbd2] + StatsBase v0.30.0
-      [30578b45] + URIParser v0.4.0
-      [1986cc42] + Unitful v0.15.0
-      [04f20302] + WorldOceanAtlasTools v0.2.0 #master (https://github.com/briochemc/WorldOceanAtlasTools.jl.git)
+      (...)
     ```
 
     Then you can add the parent package by typing
@@ -111,55 +94,8 @@ The packages you must install are:
       Updating git-repo `https://github.com/briochemc/AIBECS.jl.git`
      Resolving package versions...
       Updating `~/.julia/environments/v1.1/Project.toml`
-      [3487739c] + TransportMatrixTools v0.3.0 #master (https://github.com/briochemc/AIBECS.jl.git)
-      Updating `~/.julia/environments/v1.1/Manifest.toml`
-      [4fba245c] + ArrayInterface v0.1.1
-      [a74b3585] + Blosc v0.5.1
-      [e1450e63] + BufferedStreams v1.0.0
-      [631607c0] + CMake v1.1.1
-      [d5fb7624] + CMakeWrapper v0.2.2
-      [49dc2e85] + Calculus v0.4.1
-      [324d7699] + CategoricalArrays v0.5.2
-      [944b1d66] + CodecZlib v0.5.2
-      [a93c6f00] + DataFrames v0.17.1
-      [9a8bc11e] + DataStreams v0.4.1
-      [2b5f629d] + DiffEqBase v5.6.4
-      [ffbed154] + DocStringExtensions v0.7.0
-      [31f4e45d] + DualMatrixTools v1.2.4
-      [fa6b7ba4] + DualNumbers v0.6.2
-      [bf96fef3] + FieldMetadata v0.0.3
-      [5789e2e9] + FileIO v1.0.6
-      [4c728ea3] + Flatten v0.1.0
-      [f67ccb44] + HDF5 v0.11.1
-      [0862f596] + HTTPClient v0.2.1
-      [d9be37ee] + Homebrew v0.7.1
-      [04d39a18] + HyperDualMatrixTools v2.0.2
-      [50ceba7f] + HyperDualNumbers v4.0.0
-      [82899510] + IteratorInterfaceExtensions v0.1.1
-      [033835bb] + JLD2 v0.1.2
-      [b27032c2] + LibCURL v0.5.0
-      [522f3ed2] + LibExpat v0.5.0
-      [2ec943e9] + Libz v1.0.0
-      [23992714] + MAT v0.5.0
-      [77ba4419] + NaNMath v0.3.2
-      [d96e819e] + Parameters v0.10.3
-      [3cdcf5f2] + RecipesBase v0.6.0
-      [731186ca] + RecursiveArrayTools v0.20.0
-      [ae029012] + Requires v0.5.2
-      [f2b01f46] + Roots v0.8.1
-      [276daf66] + SpecialFunctions v0.7.2
-      [90137ffa] + StaticArrays v0.10.3
-      [3783bdb8] + TableTraits v0.4.1
-      [bd369af6] + Tables v0.1.18
-      [3bb67fe8] + TranscodingStreams v0.9.4
-      [3487739c] + AIBECS v1.0.0 #master (https://github.com/briochemc/TransportMatrixTools.jl.git)
-      [a2a6695c] + TreeViews v0.3.0
-      [6fb2a4bd] + UnitfulAngles v0.5.0
-      [6112ee07] + UnitfulAstro v0.2.0
-      [ea10d353] + WeakRefStrings v0.5.8
-      [c17dfb99] + WinRPM v0.4.2
-      [9fa8497b] + Future
-      [4607b0f0] + SuiteSparse
+      [3487739c] + AIBECS v1.0.0 #master (https://github.com/briochemc/AIBECS.jl.git)
+      (...)
     ```
 
     This should only take a few seconds.
