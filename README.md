@@ -100,41 +100,27 @@ The packages you must install are:
 
     This should only take a few seconds.
 
-- **b)** the **Plots** package
+- **b)** the **Cartopy** packages
 
     In order to plot things, i.e., to look at the output of the beautiful work you will be doing in this demo, you will need a plotting package.
-    Just like before, make sure you are in `pkg` mode and type `add Plots` (and press return), and you should see something like:
+    Here, we are going to try Python's [Cartopy](https://scitools.org.uk/cartopy/docs/latest/).
+    First, we need to install it via the `Conda` package, which we need to install via `add Conda` (and press return), and you should see something like:
 
     ```julia
-    (v1.1) pkg> add Plots
-      Updating registry at `~/.julia/registries/General`
-      Updating git-repo `https://github.com/JuliaRegistries/General.git`
+    (v1.1) pkg> add Conda
      Resolving package versions...
-     Installed Showoff ─────────── v0.2.1
-     Installed PlotThemes ──────── v0.3.0
-     Installed Measures ────────── v0.3.0
-     Installed ColorTypes ──────── v0.7.5
-     Installed Plots ───────────── v0.24.0
-     Installed PlotUtils ───────── v0.5.8
-     Installed Contour ─────────── v0.5.1
-     Installed FixedPointNumbers ─ v0.5.3
-     Installed Colors ──────────── v0.9.5
-     Installed GR ──────────────── v0.39.1
       Updating `~/.julia/environments/v1.1/Project.toml`
-      [91a5bcdd] + Plots v0.24.0
-      Updating `~/.julia/environments/v1.1/Manifest.toml`
-      [3da002f7] + ColorTypes v0.7.5
-      [5ae59095] + Colors v0.9.5
-      [d38c429a] + Contour v0.5.1
-      [53c48c17] + FixedPointNumbers v0.5.3
-      [28b8d3ca] + GR v0.39.1
-      [442fdcdd] + Measures v0.3.0
-      [ccf2f8ad] + PlotThemes v0.3.0
-      [995b91a9] + PlotUtils v0.5.8
-      [91a5bcdd] + Plots v0.24.0
-      [992d4aef] + Showoff v0.2.1
-      Building GR ───→ `~/.julia/packages/GR/KGODl/deps/build.log`
-      Building Plots → `~/.julia/packages/Plots/47Tik/deps/build.log`
+      [8f4d0f93] + Conda v1.2.0
+    ```
+
+    Then we install PyPlot:
+    ```julia
+    (v1.1) pkg> add PyPlot
+    ```
+
+    And we also need PyCall:
+    ```julia
+    (v1.1) pkg> add PyCall
     ```
 
     And again, this should only take a few seconds.
