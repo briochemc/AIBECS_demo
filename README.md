@@ -58,12 +58,11 @@ julia>
 
 The packages you must install are:
 
-- **a)** The **TransportMatrixTools** package
+- **a)** The **AIBECS** package
 
-    To create a global steady-state biogeochemistry model, we will be using the [TransportMatrixTools](https://github.com/briochemc/TransportMatrixTools.jl) package.
-    (The package's name is still up in the air, as you will see in the notebook, where it is called AIBECS, but for now this is the name that Julia knows.)
+    To create a global steady-state biogeochemistry model, we will be using the [AIBECS](https://github.com/briochemc/AIBECS.jl) package.
 
-    Because this package is not registered with Julia and depends on one of my other unregistered (yet) packages, we must first install the latter.
+    Because this package is not registered with Julia yet, and depends on one of my other unregistered (yet) packages, we must first install the latter.
 
     Activate the package manager with `]`, and "add" the package by typing first
 
@@ -102,17 +101,17 @@ The packages you must install are:
     Then you can add the parent package by typing
 
     ```julia
-    add https://github.com/briochemc/TransportMatrixTools.jl.git
+    add https://github.com/briochemc/AIBECS.jl.git
     ```
 
     in `pkg` mode, which should look like
 
     ```julia
-    (v1.1) pkg> add https://github.com/briochemc/TransportMatrixTools.jl.git
-      Updating git-repo `https://github.com/briochemc/TransportMatrixTools.jl.git`
+    (v1.1) pkg> add https://github.com/briochemc/AIBECS.jl.git
+      Updating git-repo `https://github.com/briochemc/AIBECS.jl.git`
      Resolving package versions...
       Updating `~/.julia/environments/v1.1/Project.toml`
-      [3487739c] + TransportMatrixTools v0.3.0 #master (https://github.com/briochemc/TransportMatrixTools.jl.git)
+      [3487739c] + TransportMatrixTools v0.3.0 #master (https://github.com/briochemc/AIBECS.jl.git)
       Updating `~/.julia/environments/v1.1/Manifest.toml`
       [4fba245c] + ArrayInterface v0.1.1
       [a74b3585] + Blosc v0.5.1
@@ -153,7 +152,7 @@ The packages you must install are:
       [3783bdb8] + TableTraits v0.4.1
       [bd369af6] + Tables v0.1.18
       [3bb67fe8] + TranscodingStreams v0.9.4
-      [3487739c] + TransportMatrixTools v0.3.0 #master (https://github.com/briochemc/TransportMatrixTools.jl.git)
+      [3487739c] + AIBECS v1.0.0 #master (https://github.com/briochemc/TransportMatrixTools.jl.git)
       [a2a6695c] + TreeViews v0.3.0
       [6fb2a4bd] + UnitfulAngles v0.5.0
       [6112ee07] + UnitfulAstro v0.2.0
