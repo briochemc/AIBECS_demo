@@ -61,27 +61,7 @@ The packages you must install are:
 - **a)** The **AIBECS** package
 
     To create a global steady-state biogeochemistry model, we will be using the [AIBECS](https://github.com/briochemc/AIBECS.jl) package.
-
-    Because this package is not registered with Julia yet, and depends on one of my other unregistered (yet) packages, we must first install the latter.
-
-    Activate the package manager with `]`, and "add" the package by typing first
-
-    ```julia
-    add https://github.com/briochemc/WorldOceanAtlasTools.jl.git
-    ```
-
-    It should look like this:
-
-    ```julia
-    (v1.1) pkg> add https://github.com/briochemc/WorldOceanAtlasTools.jl.git
-      Updating git-repo `https://github.com/briochemc/WorldOceanAtlasTools.jl.git`
-     Resolving package versions...
-      Updating `~/.julia/environments/v1.1/Project.toml`
-      [04f20302] + WorldOceanAtlasTools v0.2.0 #master (https://github.com/briochemc/WorldOceanAtlasTools.jl.git)
-      (...)
-    ```
-
-    Then you can add the parent package by typing
+    Because it is not registered yet (soon though), you have to specify the GitHub URL to install it, via
 
     ```julia
     add https://github.com/briochemc/AIBECS.jl.git
