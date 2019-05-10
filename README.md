@@ -2,6 +2,11 @@
 
 This repository contains a Jupyter notebook to beta test the AIBECS package.
 
+First, to download this notebook, you can either click on the download button on this page, or using git, type
+```bash
+git clone https://github.com/briochemc/AIBECS_demo.git
+```
+
 This [README](https://github.com/briochemc/AIBECS_demo/blob/master/README.md) provides a set of instructions and prerequisites to run the notebook.
 
 To run the notebook, you must ensure that you have installed the required software (including the package to run the notebook).
