@@ -39,7 +39,7 @@ julia>
 ```
 
 This is called the Julia REPL (for Read Eval Loop Print) and is used for interactive use of Julia.
-Anyway, this great, Julia is now running on your computer! Congratulations!
+Great job, Julia is now running on your computer! Congratulations!
 
 If you want to learn more about Julia, you can read [the documentation](https://docs.julialang.org/en/v1/), there is a [Discourse forum](https://discourse.julialang.org/), and there is a [Slack channel](https://julialang.slack.com/messages) if you need help.
 But for now you should not need any of those: The notebook will just require you to press Shift + Enter a couple of times.
@@ -163,7 +163,8 @@ julia> using IJulia
 Note you can just copy paste the code above (including the `julia>` bits), and the REPL will know to not paste those automatically.
 Everytime a package is used for the first time, Julia will precompile it (which can take a few seconds to minutes, depending on the package — don't worry, just let it finish).
 
-and finally tall Julia to install and start JupyterLab by simply typing `jupyerlab()` in Julia. It should look like:
+Finally, you can start JupyterLab from Julia by simply typing `jupyerlab()` in Julia.
+It should look like:
 
 ```julia
 julia> jupyterlab()
@@ -172,5 +173,5 @@ julia> jupyterlab()
 If Julia asks you if you want Conda to install JupyterLab, just say "yes" (i.e., type `y`).
 After a couple seconds/minutes of downloads and installations, you should be all set up and a browser window should open with JupyterLab!
 
-Just navigate to the notebook within the JupyterLab of your browser and double-click on the notebook!
+Just navigate to the notebook within JupyterLab in your browser and double-click on the notebook!
 
